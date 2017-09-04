@@ -3,7 +3,6 @@ var webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const __DEV__ = process.env.NODE_ENV === 'development'
-
 var config = {
 	entry: {
 		main: [
@@ -12,8 +11,9 @@ var config = {
 	},
 	devtool: __DEV__ ? 'source-map' : false,
 	output: {
-    filename: "./[name].js",
+    filename: "[name].js",
     path: path.join(__dirname, '..', "dist"),
+		publicPath: 'http://localhost:8080/'
   },
 	module: {
 	  rules: [
@@ -34,7 +34,12 @@ var config = {
 					}
 				]
 	    }
-	  ]
+	  ],
+	},
+	resolve: {
+		alias: {
+			'components': path.join(__dirname, '..', 'src', 'components'),
+		}
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
@@ -48,16 +53,25 @@ var config = {
 };
 
 if (__DEV__) {
-	config.plugins.push(new webpack.HotModuleReplacementPlugin());
-	config.entry.main.push(`webpack-hot-middleware/client.js?path=__webpack_hmr`);
+	config.plugins.push(
+		new webpack.HotModuleReplacementPlugin(),
+		new webpack.NamedModulesPlugin()
+	);
 } else {
+	config.resolve = {
+		alias: {
+      react: "preact-compat",
+      "react-dom": "preact-compat"
+    }
+	}
 	config.plugins.push(
 		new webpack.optimize.UglifyJsPlugin(),
 		new webpack.DefinePlugin({
 		  'process.env': {
 		    NODE_ENV: JSON.stringify('production')
 		  }
-		})
+		}),
+    new webpack.optimize.AggressiveMergingPlugin()//Merge chunks
 	);
 }
 

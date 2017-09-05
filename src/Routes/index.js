@@ -2,10 +2,15 @@ import Home from './Home'
 import Toto from './Toto'
 import Titi from './Titi'
 
+import { get } from './../actions/test'
+
 export default [
 	{
 		path: '/',
-		component: Home
+		component: Home,
+		actions: {
+			get
+		}
 	},
 	{
 		path: '/toto',
@@ -13,6 +18,9 @@ export default [
 	},
 	{
 		path: '/toto/:id',
-		component: Titi
+		component: Titi,
+		actions: {
+			get
+		}
 	}
 ]

@@ -14,9 +14,21 @@ export const media = Object.keys(sizes).reduce((acc, label) => {
 			${css(...args)}
 		}
 	`
-
 	return acc
 }, {})
 
 
-export const theme = { primary: { color: '#33C3F0', hover: '#1EAEDB' }}
+export const theme = {
+	primary: {
+		color: '#33C3F0',
+		hover: '#1EAEDB'
+	},
+	border: {
+		color: '#D1D1D1',
+		focus: '#33C3F0',
+		hover: '#888888'
+	},
+	spacing: {
+		margin: '10px'
+	}
+}

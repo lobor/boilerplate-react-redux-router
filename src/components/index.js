@@ -5,4 +5,8 @@ import Column from './column'
 import Button from './button'
 import Input from './input'
 import Select from './select'
-export { H1, Box, Row, Column, Button, Input, Select }
+import Textarea from './textarea'
+import Nav from './nav'
+import Link from './Link'
+import Alert from './alert'
+export { H1, Box, Row, Column, Button, Input, Select, Textarea, Nav, Link, Alert }

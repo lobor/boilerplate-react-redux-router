@@ -8,8 +8,28 @@ module.exports = styled.div`
 	margin-left: 4%;
 	${media.Mobile`margin-left: 0;`}
   letter-spacing: .1rem;
+  display: flex;
 	&:first-child{
 		margin-left: 0;
 	}
 
+	${props => {
+		if (props.left) {
+			return `
+				justify-content: flex-end;
+			`;
+		} else if (props.center) {
+			return `
+				justify-content: center;
+			`;
+		} else if (props.spaceAround) {
+			return `
+				justify-content: space-around;
+			`;
+		} else if (props.spaceBetween) {
+			return `
+				justify-content: space-between;
+			`;
+		}
+	}}
 `;

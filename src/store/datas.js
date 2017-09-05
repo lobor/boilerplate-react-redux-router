@@ -1,7 +1,8 @@
 import { applyMiddleware, compose, createStore } from 'redux'
+import ReduxThunk from 'redux-thunk'
 
-let store = createStore((state = {}) => {
-	return state
-})
+import test from './../reducers/test'
+
+let store = createStore(test, applyMiddleware(ReduxThunk))
 
 module.exports = store

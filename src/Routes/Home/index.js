@@ -7,35 +7,54 @@ import {
   Column,
   Button,
   Input,
-  Select
+  Select,
+	Textarea,
+	Nav,
+	Alert
 } from 'components'
 
-export default() => (
-  <Column>
-    <H1>Home salut</H1>
-    <Row>
-      <Box>
-        <Input type="email" name="toto" placeholder="dupont@ymail.com"/>
-      </Box>
-      <Box>
-        <Input type="text"/>
-      </Box>
-      <Box>
-        <Select>
-          <option>Toto</option>
-        </Select>
-      </Box>
-    </Row>
-    <Row>
-			<Box>
-	      <Button>Button</Button>
-	      <Button primary>Button</Button>
-			</Box>
-    </Row>
-    <Row>
-      <Box>Col 1</Box>
-      <Box>Col 2</Box>
-      <Box>Col 3</Box>
-    </Row>
-  </Column>
-)
+export default class Home extends React.Component{
+	static keyState = [
+		'title'
+	]
+
+	click = () => {
+		this.props.get()
+	}
+
+	render() {
+		return (
+			<Column>
+		    <H1>{this.props.title}</H1>
+		    <Row>
+		      <Column>
+						<label htmlFor="email">Input Email</label>
+		      	<Input type="email" id="email" name="toto" placeholder="dupont@ymail.com"/>
+		      </Column>
+		      <Column>
+						<label htmlFor="textarea">Textarea</label>
+		        <Textarea id="textarea" />
+					</Column>
+		      <Column>
+						<label htmlFor="select">Select</label>
+		        <Select id="select">
+		          <option>Toto</option>
+		        </Select>
+					</Column>
+		    </Row>
+		    <Row left>
+		      <Button>Cancel</Button>
+		      <Button primary onClick={this.click}>Valider</Button>
+		    </Row>
+		    <Row>
+		      <Box>Col 1</Box>
+		      <Box>Col 2</Box>
+		      <Box>Col 3</Box>
+		    </Row>
+		    <Alert>Alert</Alert>
+		    <Alert warning>Alert warning</Alert>
+		    <Alert error>Alert error</Alert>
+		  </Column>
+		)
+	}
+}

@@ -6,36 +6,45 @@ export default class Link extends React.Component {
 		active: false
 	}
 
-	// componentWillMount() {
-	// 	this.props.routes.subscribe(() => {
-	// 	  const route = this.props.routes.getState()
-	// 	  const matched = match(route.href, routesRedux)
-	//
-	// 	  if (matched) {
-	// 	    this.setState({ children: (typeof matched.handler === 'function') ? matched.handler() : matched.handler });
-	// 	  } else {
-	// 			this.setState({ children: (<div>404 not found</div>) });
-	// 	  }
-	// 	});
-	// }
-	//
-	// componentWillUnmount() {
-	//
-	// }
+	static defaultProps = {
+		selected: false,
+		className: '',
+		regexp: false
+	}
+
+	componentWillMount() {
+		var reg;
+		if (this.props.regexp) {
+			reg = new RegExp(this.props.href, 'g');
+		}
+		this.setState({ active: router.getState().href === this.props.href || this.props.selected || reg && router.getState().href.match(reg) })
+		this.unsubscribe = router.subscribe(() => {
+			this.setState({ active: router.getState().href === this.props.href || reg && router.getState().href.match(reg) })
+		})
+	}
+
+	componentWillUnmount() {
+		this.unsubscribe();
+	}
 
 	clickItem = (e) => {
 		e.preventDefault();
 		e.stopPropagation();
-		this.setState({ active: true });
 		router.dispatch(navigate(e.target.href))
 	}
 
 	render() {
-		console.log(this.state.active)
+		var { active } = this.state
 		var {
-			children, to, ...args
+			children,
+			href,
+			className,
+			regexp,
+			...args
 		} = this.props;
 
-		return (<a href={to} style={{ color: this.state.active ? 'red' : 'black' }} onClick={this.clickItem} {...args} className='page-layout__nav-item--active'>{children}</a>)
+		className += active ? ' selected' : ''
+
+		return (<a href={href} onClick={this.clickItem} {...args} className={className}>{children}</a>)
 	}
 }

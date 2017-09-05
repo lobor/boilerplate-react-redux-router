@@ -1,6 +1,11 @@
 var path = require('path')
 var webpack = require('webpack');
+var MyPlugin = require('./plugins/gzip')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const InlineChunkManifestHtmlWebpackPlugin = require('inline-chunk-manifest-html-webpack-plugin');
+
+const DashboardPlugin = require('webpack-dashboard/plugin');
+var CompressionPlugin = require("compression-webpack-plugin")
 
 const __DEV__ = process.env.NODE_ENV === 'development'
 var config = {
@@ -29,7 +34,7 @@ var config = {
 					{
 						loader: 'babel-loader',
 						query: {
-							presets: ['es2015', 'react', 'stage-2']
+							presets: ['es2015', 'react', 'stage-2', 'stage-0']
 						}
 					}
 				]
@@ -42,9 +47,11 @@ var config = {
 		}
 	},
 	plugins: [
+		// new InlineChunkManifestHtmlWebpackPlugin(),
 		new HtmlWebpackPlugin({
 		  template: path.join(__dirname, '..', 'src', "index.html"),
 		  inject: true,
+			hash: true,
 		  minify: {
 		    collapseWhitespace: true,
 		  },
@@ -55,16 +62,18 @@ var config = {
 if (__DEV__) {
 	config.plugins.push(
 		new webpack.HotModuleReplacementPlugin(),
-		new webpack.NamedModulesPlugin()
+		new webpack.NamedModulesPlugin(),
+		// new DashboardPlugin()
 	);
 } else {
-	config.resolve = {
-		alias: {
-      react: "preact-compat",
-      "react-dom": "preact-compat"
-    }
-	}
+	Object.assign(config.resolve.alisa, {react: "preact-compat", "react-dom": "preact-compat"});
+
 	config.plugins.push(
+		new MyPlugin({ options: '' }),
+		new webpack.LoaderOptionsPlugin({
+      minimize: true,
+      debug: false,
+    }),
 		new webpack.optimize.UglifyJsPlugin(),
 		new webpack.DefinePlugin({
 		  'process.env': {

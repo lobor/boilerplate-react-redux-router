@@ -9,4 +9,5 @@ import Textarea from './textarea'
 import Nav from './nav'
 import Link from './Link'
 import Alert from './alert'
-export { H1, Box, Row, Column, Button, Input, Select, Textarea, Nav, Link, Alert }
+import Loading from './Loading'
+export { H1, Box, Row, Column, Button, Input, Select, Textarea, Nav, Link, Alert, Loading }

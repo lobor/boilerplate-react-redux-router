@@ -18,6 +18,10 @@ export default class Home extends React.Component{
 		'title'
 	]
 
+	componentWillMount() {
+		console.log(this.props);
+	}
+
 	click = () => {
 		this.props.get()
 	}

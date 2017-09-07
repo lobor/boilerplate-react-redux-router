@@ -2,7 +2,7 @@ var path = require('path')
 var webpack = require('webpack');
 var MyPlugin = require('./plugins/gzip')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const InlineChunkManifestHtmlWebpackPlugin = require('inline-chunk-manifest-html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const DashboardPlugin = require('webpack-dashboard/plugin');
 var CompressionPlugin = require("compression-webpack-plugin")
@@ -47,7 +47,6 @@ var config = {
 		}
 	},
 	plugins: [
-		// new InlineChunkManifestHtmlWebpackPlugin(),
 		new HtmlWebpackPlugin({
 		  template: path.join(__dirname, '..', 'src', "index.html"),
 		  inject: true,
@@ -55,7 +54,8 @@ var config = {
 		  minify: {
 		    collapseWhitespace: true,
 		  },
-		})
+		}),
+		new CopyWebpackPlugin([{ from: path.join(__dirname, '..', 'public'), to: path.join(__dirname, '..', 'dist', 'public') }])
 	]
 };
 

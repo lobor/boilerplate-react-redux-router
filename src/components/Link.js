@@ -1,5 +1,8 @@
 import React from 'react'
 import { router, navigate } from './../store/'
+import styled from 'styled-components';
+
+const A = styled.a``;
 
 export default class Link extends React.Component {
 	state = {
@@ -30,7 +33,13 @@ export default class Link extends React.Component {
 	clickItem = (e) => {
 		e.preventDefault();
 		e.stopPropagation();
-		router.dispatch(navigate(e.target.href))
+
+		if (this.props.onClick) {
+			this.props.onClick(e);
+		}
+
+		if (e.target.href)
+			router.dispatch(navigate(e.target.href))
 	}
 
 	render() {
@@ -40,11 +49,12 @@ export default class Link extends React.Component {
 			href,
 			className,
 			regexp,
+			onClick,
 			...args
 		} = this.props;
 
 		className += active ? ' selected' : ''
 
-		return (<a href={href} onClick={this.clickItem} {...args} className={className}>{children}</a>)
+		return (<A href={href} onClick={this.clickItem} {...args} className={className}>{children}</A>)
 	}
 }

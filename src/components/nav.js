@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { theme } from './../theme'
+import { theme, media } from './../theme'
 
 module.exports = styled.nav`
   font-size: 1rem;
@@ -47,4 +47,26 @@ module.exports = styled.nav`
 	    background-color: #fff;
 		}
 	}
+
+	${media.Mobile`
+		${props => {
+			if (props.top && media.Mobile) {
+				return `
+					position: fixed;
+					transition: all 0.3s linear;
+					top: 0;
+					height: 100%;
+					border-bottom-width: 0;
+					border-top-width: 1px;
+					flex-direction: column;
+
+					transform: translateY(${props.open ? '0' : 'calc(100% - 43px)'});
+
+					a {
+						border: 0;
+					}
+				`
+			}
+		}}
+	`}
 `;

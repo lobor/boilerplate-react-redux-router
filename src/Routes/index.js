@@ -4,23 +4,32 @@ import Titi from './Titi'
 
 import { get } from './../actions/test'
 
-export default [
-	{
-		path: '/',
-		component: Home,
-		actions: {
-			get
+import Layout from './../layout/Layout'
+import Layout3Columns from './../layout/Layout3Columns'
+
+export default {
+	defaultLayout: Layout,
+	children: [
+		{
+			path: '/',
+			component: Home,
+			actions: {
+				get
+			}
+		},
+		{
+			layout: Layout3Columns,
+			path: '/toto',
+			component: Toto,
+			children: [
+				{
+					path: '/:id',
+					component: Titi,
+					actions: {
+						get
+					}
+				}
+			]
 		}
-	},
-	{
-		path: '/toto',
-		component: Toto
-	},
-	{
-		path: '/toto/:id',
-		component: Titi,
-		actions: {
-			get
-		}
-	}
-]
+	]
+}

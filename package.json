@@ -25,6 +25,7 @@
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.6",
     "react-router": "^3.0.0",
+    "redux-offline": "^2.0.0",
     "redux-routing": "^0.3.2",
     "redux-thunk": "^2.2.0",
     "styled-components": "^2.1.2",

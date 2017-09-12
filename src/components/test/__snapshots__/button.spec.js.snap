@@ -51,3 +51,55 @@ exports[`render button 1`] = `
   className="c0"
 />
 `;
+
+exports[`render button primary 1`] = `
+.c0 {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #FFF;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  -webkit-letter-spacing: .1rem;
+  -moz-letter-spacing: .1rem;
+  -ms-letter-spacing: .1rem;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #33C3F0;
+  border-radius: 4px;
+  border: 1px solid #33C3F0;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-left: 10px;
+}
+
+.c0:hover {
+  color: #FFF;
+  border-color: #1EAEDB;
+  outline: 0;
+  background-color: #1EAEDB;
+}
+
+.c0:first-child {
+  margin-left: 0;
+}
+
+@media (max-width:25em) {
+  .c0 {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .c0:last-child {
+    margin-bottom: 0;
+  }
+}
+
+<button
+  className="c0"
+/>
+`;

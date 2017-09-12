@@ -12,12 +12,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-	"jest": {
-	},
+  "jest": {
+    "collectCoverage": true
+  },
   "dependencies": {
     "babel-preset-stage-0": "^6.24.1",
     "babel-regenerator-runtime": "^6.5.0",
     "compression-webpack-plugin": "^1.0.0",
+    "enzyme": "^2.9.1",
     "express": "^4.15.4",
     "history": "^4.6.3",
     "inline-chunk-manifest-html-webpack-plugin": "^1.1.1",

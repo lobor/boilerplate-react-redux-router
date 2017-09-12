@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render link 1`] = `
+<a
+  className=" selected sc-bdVaJa bDWFJH"
+  href={undefined}
+  onClick={[Function]}
+  selected={false}
+/>
+`;
+
+exports[`render link selected 1`] = `
+<a
+  className=" selected sc-bdVaJa bDWFJH"
+  href="/"
+  onClick={[Function]}
+  selected={true}
+/>
+`;

@@ -9,3 +9,8 @@ test('render button', () => {
   const tree = renderer.create(<Button />).toJSON()
   expect(tree).toMatchSnapshot()
 })
+
+test('render button primary', () => {
+  const tree = renderer.create(<Button primary />).toJSON()
+  expect(tree).toMatchSnapshot()
+})

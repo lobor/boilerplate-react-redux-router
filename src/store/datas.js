@@ -3,7 +3,7 @@ import ReduxThunk from 'redux-thunk'
 import { offline } from 'redux-offline';
 import offlineConfig from 'redux-offline/lib/defaults';
 
-import test from './../reducers/test'
+import test from './../reducers/toto'
 
 let store = createStore(test, compose(
 	offline(offlineConfig)

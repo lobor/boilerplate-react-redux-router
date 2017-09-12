@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render center box 1`] = `
+.c0 {
+  font-size: 1rem;
+  padding: 5px 10px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-left: 4%;
+  -webkit-letter-spacing: .1rem;
+  -moz-letter-spacing: .1rem;
+  -ms-letter-spacing: .1rem;
+  letter-spacing: .1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0:first-child {
+  margin-left: 0;
+}
+
+@media (max-width:25em) {
+  .c0 {
+    margin-left: 0;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`render left box 1`] = `
+.c0 {
+  font-size: 1rem;
+  padding: 5px 10px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-left: 4%;
+  -webkit-letter-spacing: .1rem;
+  -moz-letter-spacing: .1rem;
+  -ms-letter-spacing: .1rem;
+  letter-spacing: .1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c0:first-child {
+  margin-left: 0;
+}
+
+@media (max-width:25em) {
+  .c0 {
+    margin-left: 0;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`render right box 1`] = `
+.c0 {
+  font-size: 1rem;
+  padding: 5px 10px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-left: 4%;
+  -webkit-letter-spacing: .1rem;
+  -moz-letter-spacing: .1rem;
+  -ms-letter-spacing: .1rem;
+  letter-spacing: .1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0:first-child {
+  margin-left: 0;
+}
+
+@media (max-width:25em) {
+  .c0 {
+    margin-left: 0;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`render space around box 1`] = `
+.c0 {
+  font-size: 1rem;
+  padding: 5px 10px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-left: 4%;
+  -webkit-letter-spacing: .1rem;
+  -moz-letter-spacing: .1rem;
+  -ms-letter-spacing: .1rem;
+  letter-spacing: .1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+}
+
+.c0:first-child {
+  margin-left: 0;
+}
+
+@media (max-width:25em) {
+  .c0 {
+    margin-left: 0;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`render space-between box 1`] = `
+.c0 {
+  font-size: 1rem;
+  padding: 5px 10px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-left: 4%;
+  -webkit-letter-spacing: .1rem;
+  -moz-letter-spacing: .1rem;
+  -ms-letter-spacing: .1rem;
+  letter-spacing: .1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+}
+
+.c0:first-child {
+  margin-left: 0;
+}
+
+@media (max-width:25em) {
+  .c0 {
+    margin-left: 0;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;

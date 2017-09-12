@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render column 1`] = `
+.c0 {
+  font-size: 4.0rem;
+  font-weight: 300;
+  line-height: 1.2;
+  -webkit-letter-spacing: -.1rem;
+  -moz-letter-spacing: -.1rem;
+  -ms-letter-spacing: -.1rem;
+  letter-spacing: -.1rem;
+}
+
+@media (min-width:550px) {
+  .c0 h1 {
+    font-size: 5.0rem;
+  }
+}
+
+<h1
+  className="c0"
+/>
+`;

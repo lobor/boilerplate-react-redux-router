@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render default alert 1`] = `
+.c0 {
+  padding: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #246;
+  background-color: #e2eef9;
+  border: 1px solid #bac6d3;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`render error alert 1`] = `
+.c0 {
+  padding: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #246;
+  background-color: #e2eef9;
+  border: 1px solid #bac6d3;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  color: #911;
+  background-color: #fcdede;
+  border-color: #d2b2b2;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`render warning alert 1`] = `
+.c0 {
+  padding: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #246;
+  background-color: #e2eef9;
+  border: 1px solid #bac6d3;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  color: #4c4a42;
+  background-color: #fff9ea;
+  border-color: #dfd8c2;
+}
+
+<div
+  className="c0"
+/>
+`;

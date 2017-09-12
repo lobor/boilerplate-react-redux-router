@@ -2,7 +2,7 @@ import Home from './Home'
 import Toto from './Toto'
 import Titi from './Titi'
 
-import { get } from './../actions/test'
+import { get } from './../actions/toto'
 
 import Layout from './../layout/Layout'
 import Layout3Columns from './../layout/Layout3Columns'

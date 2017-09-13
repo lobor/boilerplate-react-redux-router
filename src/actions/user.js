@@ -1,13 +1,12 @@
-export function get(user = {}) {
+export function get(id) {
 	return {
-    type: 'test',
-    payload: { user }
+    type: 'GET_USER',
+    payload: { id }
 	}
 };
 
-export function list(users = []) {
+export function list() {
 	return {
-    type: 'test',
-    payload: { users }
+    type: 'LIST_USER'
 	}
 };

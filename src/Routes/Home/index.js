@@ -14,14 +14,10 @@ import {
 } from 'components'
 
 export default class Home extends React.Component{
-	static keyState = [
-		'title'
-	]
-
 	render() {
 		return (
 			<Column>
-		    <H1>{this.props.title}</H1>
+		    <H1>Hello</H1>
 		    <Row>
 		      <Column>
 						<label htmlFor="email">Input Email</label>

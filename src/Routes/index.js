@@ -1,5 +1,6 @@
 import Home from './Home'
 import User from './User'
+import UserInfo from './User/info'
 import About from './About'
 
 import { get, list } from './../actions/user'
@@ -12,10 +13,7 @@ export default {
 	children: [
 		{
 			path: '/',
-			component: Home,
-			actions: {
-				get
-			}
+			component: Home
 		},
 		{
 			path: '/about',
@@ -24,13 +22,15 @@ export default {
 		{
 			path: '/user',
 			component: User,
+			actions: {
+				list
+			},
 			children: [
 				{
 					path: '/:id',
-					component: User,
+					component: UserInfo,
 					actions: {
-						get,
-						list
+						get
 					}
 				}
 			]

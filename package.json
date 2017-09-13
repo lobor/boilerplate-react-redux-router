@@ -14,7 +14,8 @@
   "jest": {
     "collectCoverage": true,
 		"moduleNameMapper": {
-			"^components(.*)$": "<rootDir>/src/components$1"
+			"^components(.*)$": "<rootDir>/src/components$1",
+			"^actions(.*)$": "<rootDir>/src/actions$1"
 		}
   },
   "dependencies": {

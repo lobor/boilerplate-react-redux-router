@@ -1,316 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Test route Home render Home 1`] = `
-.c1 {
-  font-size: 4.0rem;
-  font-weight: 300;
-  line-height: 1.2;
-  -webkit-letter-spacing: -.1rem;
-  -moz-letter-spacing: -.1rem;
-  -ms-letter-spacing: -.1rem;
-  letter-spacing: -.1rem;
-}
-
-.c9 {
-  font-size: 1rem;
-  padding: 5px 10px;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  margin-right: 4%;
-  -webkit-letter-spacing: .1rem;
-  -moz-letter-spacing: .1rem;
-  -ms-letter-spacing: .1rem;
-  letter-spacing: .1rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c9:last-child {
-  margin-right: 0;
-}
-
-.c2 {
-  font-size: 1.5em;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
-}
-
-.c2:last-child {
-  margin: 0;
-}
-
-.c6 {
-  font-size: 1.5em;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
-.c6:last-child {
-  margin: 0;
-}
-
-.c0 {
-  font-size: 1rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-right: 10px;
-}
-
-.c0:last-child {
-  margin: 0;
-}
-
-.c7 {
-  display: inline-block;
-  height: 38px;
-  padding: 0 30px;
-  color: #555;
-  text-align: center;
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 38px;
-  -webkit-letter-spacing: .1rem;
-  -moz-letter-spacing: .1rem;
-  -ms-letter-spacing: .1rem;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #D1D1D1;
-  cursor: pointer;
-  box-sizing: border-box;
-  margin-left: 10px;
-}
-
-.c7:hover {
-  color: #333;
-  border-color: #888888;
-  outline: 0;
-  background-color: inherit;
-}
-
-.c7:first-child {
-  margin-left: 0;
-}
-
-.c8 {
-  display: inline-block;
-  height: 38px;
-  padding: 0 30px;
-  color: #FFF;
-  text-align: center;
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 38px;
-  -webkit-letter-spacing: .1rem;
-  -moz-letter-spacing: .1rem;
-  -ms-letter-spacing: .1rem;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: #33C3F0;
-  border-radius: 4px;
-  border: 1px solid #33C3F0;
-  cursor: pointer;
-  box-sizing: border-box;
-  margin-left: 10px;
-}
-
-.c8:hover {
-  color: #FFF;
-  border-color: #1EAEDB;
-  outline: 0;
-  background-color: #1EAEDB;
-}
-
-.c8:first-child {
-  margin-left: 0;
-}
-
-.c3 {
-  height: 38px;
-  padding: 6px 10px;
-  background-color: #fff;
-  border: 1px solid #D1D1D1;
-  border-radius: 4px;
-  box-shadow: none;
-  box-sizing: border-box;
-}
-
-.c3:focus {
-  border: 1px solid #33C3F0;
-  outline: 0;
-}
-
-.c5 {
-  height: 38px;
-  padding: 6px 10px;
-  background-color: #fff;
-  border: 1px solid #D1D1D1;
-  border-radius: 4px;
-  box-shadow: none;
-  box-sizing: border-box;
-}
-
-.c5:focus {
-  border: 1px solid #33C3F0;
-  outline: 0;
-}
-
-.c4 {
-  height: 38px;
-  padding: 6px 10px;
-  background-color: #fff;
-  border: 1px solid #D1D1D1;
-  border-radius: 4px;
-  box-shadow: none;
-  box-sizing: border-box;
-}
-
-.c4:focus {
-  border: 1px solid #33C3F0;
-  outline: 0;
-}
-
-.c10 {
-  padding: 15px;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #246;
-  background-color: #e2eef9;
-  border: 1px solid #bac6d3;
-  border-radius: 3px;
-  margin-bottom: 10px;
-}
-
-.c11 {
-  padding: 15px;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #246;
-  background-color: #e2eef9;
-  border: 1px solid #bac6d3;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  color: #4c4a42;
-  background-color: #fff9ea;
-  border-color: #dfd8c2;
-}
-
-.c12 {
-  padding: 15px;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #246;
-  background-color: #e2eef9;
-  border: 1px solid #bac6d3;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  color: #911;
-  background-color: #fcdede;
-  border-color: #d2b2b2;
-}
-
-@media (min-width:550px) {
-  .c1 h1 {
-    font-size: 5.0rem;
-  }
-}
-
-@media (max-width:25em) {
-  .c9 {
-    margin-right: 0;
-  }
-}
-
-@media (max-width:25em) {
-  .c2 {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-@media (max-width:25em) {
-  .c6 {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-@media (max-width:25em) {
-  .c0 {
-    margin: 0;
-  }
-}
-
-@media (max-width:25em) {
-  .c7 {
-    margin-left: 0;
-    margin-bottom: 10px;
-  }
-
-  .c7:last-child {
-    margin-bottom: 0;
-  }
-}
-
-@media (max-width:25em) {
-  .c8 {
-    margin-left: 0;
-    margin-bottom: 10px;
-  }
-
-  .c8:last-child {
-    margin-bottom: 0;
-  }
-}
-
 <div
-  className="c0"
+  className="sc-bxivhb lluzpC"
 >
   <h1
-    className="c1"
+    className="sc-bdVaJa kwHLXg"
   />
   <div
-    className="c2"
+    className="sc-htpNat bBHonn"
   >
     <div
-      className="c0"
+      className="sc-bxivhb lluzpC"
     >
       <label
         htmlFor="email"
@@ -318,7 +19,7 @@ exports[`Test route Home render Home 1`] = `
         Input Email
       </label>
       <input
-        className="c3"
+        className="sc-EHOje jbbhzM"
         id="email"
         name="toto"
         placeholder="dupont@ymail.com"
@@ -326,7 +27,7 @@ exports[`Test route Home render Home 1`] = `
       />
     </div>
     <div
-      className="c0"
+      className="sc-bxivhb lluzpC"
     >
       <label
         htmlFor="textarea"
@@ -334,12 +35,12 @@ exports[`Test route Home render Home 1`] = `
         Textarea
       </label>
       <textarea
-        className="c4"
+        className="sc-gzVnrw fpgqiK"
         id="textarea"
       />
     </div>
     <div
-      className="c0"
+      className="sc-bxivhb lluzpC"
     >
       <label
         htmlFor="select"
@@ -347,7 +48,7 @@ exports[`Test route Home render Home 1`] = `
         Select
       </label>
       <select
-        className="c5"
+        className="sc-bZQynM bLpLBk"
         id="select"
       >
         <option>
@@ -357,50 +58,50 @@ exports[`Test route Home render Home 1`] = `
     </div>
   </div>
   <div
-    className="c6"
+    className="sc-htpNat bdtpqn"
   >
     <button
-      className="c7"
+      className="sc-ifAKCX kUckIj"
     >
       Cancel
     </button>
     <button
-      className="c8"
+      className="sc-ifAKCX cYWbib"
     >
       Valider
     </button>
   </div>
   <div
-    className="c2"
+    className="sc-htpNat bBHonn"
   >
     <div
-      className="c9"
+      className="sc-bwzfXH UDjhZ"
     >
       Col 1
     </div>
     <div
-      className="c9"
+      className="sc-bwzfXH UDjhZ"
     >
       Col 2
     </div>
     <div
-      className="c9"
+      className="sc-bwzfXH UDjhZ"
     >
       Col 3
     </div>
   </div>
   <div
-    className="c10"
+    className="sc-iwsKbI loswFL"
   >
     Alert
   </div>
   <div
-    className="c11"
+    className="sc-iwsKbI gcMXUb"
   >
     Alert warning
   </div>
   <div
-    className="c12"
+    className="sc-iwsKbI fqcyIz"
   >
     Alert error
   </div>

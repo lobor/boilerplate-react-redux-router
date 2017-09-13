@@ -1,11 +1,10 @@
-import { applyMiddleware, compose, createStore } from 'redux'
+import { applyMiddleware, compose, createStore, combineReducers } from 'redux'
 import ReduxThunk from 'redux-thunk'
 import { offline } from 'redux-offline';
 import offlineConfig from 'redux-offline/lib/defaults';
+import reducers from './../reducers'
 
-import test from './../reducers/toto'
-
-let store = createStore(test, compose(
+let store = createStore(combineReducers({...reducers}), compose(
 	offline(offlineConfig)
 ))
 

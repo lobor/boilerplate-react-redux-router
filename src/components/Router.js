@@ -17,10 +17,11 @@ function mapChildren({ path, component, actions, layout, children }, parent = {}
 	var Layout = parent.Layout || layout;
 	var action;
 
-	// Create for each actions define by route, a new method for call store. ine react-router it's "connect" method
+	// Create for each actions define by route, a new method for call store. in react-router it's "connect" method
 	for (var key in actions) {
 		action = actions[key];
 		actions[key] = (...params) => {
+			console.log(4);
 			store.dispatch(action(...params));
 		}
 	}
@@ -53,13 +54,26 @@ export default class Router extends React.Component {
 
 	_getStateDefined(handler, state) {
 		var sendState = {};
-		for (var key in state) {
-			if (handler.type && handler.type.keyState && handler.type.keyState.indexOf(key) !== -1) {
-				sendState[key] = state[key];
+		var keyState = (handler.type && handler.type.keyState) ? handler.type.keyState.slice(0) : [];
+		console.log(3, handler);
+		for (var keyState of keyState) {
+			var keys = keyState.split('.');
+			var memorizeState = {};
+			for (var key of keys) {
+				memorizeState = memorizeState[key] || state[key]
 			}
+			sendState[key] = memorizeState;
 		}
-
 		return sendState;
+
+		// var sendState = {};
+		// for (var key in state) {
+		// 	if (handler.type && handler.type.keyState && handler.type.keyState.indexOf(key) !== -1) {
+		// 		sendState[key] = state[key];
+		// 	}
+		// }
+		//
+		// return sendState;
 	}
 
 	_matchRoute() {
@@ -77,9 +91,10 @@ export default class Router extends React.Component {
 				var { params, path, handler } = matched;
 				children = handler;
 				if (typeof handler.type === 'function') {
-					var state = store.getState();
-					var sendState = this._getStateDefined(handler, state);
-					children = React.cloneElement(handler, { location: { params, path }, ...sendState });
+					// var state = store.getState();
+					// console.log(3);
+					// var sendState = this._getStateDefined(handler, state);
+					children = React.cloneElement(handler, { location: { params, path } });
 				}
 		  }
 
@@ -89,6 +104,7 @@ export default class Router extends React.Component {
 		store.subscribe(() => {
 			var state = store.getState();
 			let { params, path, handler } = this._matchRoute();
+			console.log(5);
 			var sendState = this._getStateDefined(handler, state);
 			this.setState({ children: React.cloneElement(this.state.children, { location: { params, path }, ...sendState }) });
 		})

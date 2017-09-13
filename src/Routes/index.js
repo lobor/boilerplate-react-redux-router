@@ -1,8 +1,8 @@
 import Home from './Home'
-import Toto from './Toto'
-import Titi from './Titi'
+import User from './User'
+import About from './About'
 
-import { get } from './../actions/toto'
+import { get, list } from './../actions/user'
 
 import Layout from './../layout/Layout'
 import Layout3Columns from './../layout/Layout3Columns'
@@ -18,15 +18,19 @@ export default {
 			}
 		},
 		{
-			layout: Layout3Columns,
-			path: '/toto',
-			component: Toto,
+			path: '/about',
+			component: About
+		},
+		{
+			path: '/user',
+			component: User,
 			children: [
 				{
 					path: '/:id',
-					component: Titi,
+					component: User,
 					actions: {
-						get
+						get,
+						list
 					}
 				}
 			]

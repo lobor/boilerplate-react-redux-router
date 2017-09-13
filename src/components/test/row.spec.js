@@ -10,6 +10,11 @@ test('render row', () => {
   expect(tree).toMatchSnapshot()
 })
 
+test('render row flex', () => {
+  const tree = renderer.create(<Row flex />).toJSON()
+  expect(tree).toMatchSnapshot()
+})
+
 test('render row left', () => {
   const tree = renderer.create(<Row left />).toJSON()
   expect(tree).toMatchSnapshot()

@@ -18,14 +18,6 @@ export default class Home extends React.Component{
 		'title'
 	]
 
-	componentWillMount() {
-		console.log(this.props);
-	}
-
-	click = () => {
-		this.props.get()
-	}
-
 	render() {
 		return (
 			<Column>
@@ -48,7 +40,7 @@ export default class Home extends React.Component{
 		    </Row>
 		    <Row left>
 		      <Button>Cancel</Button>
-		      <Button primary onClick={this.click}>Valider</Button>
+		      <Button primary>Valider</Button>
 		    </Row>
 		    <Row>
 		      <Box>Col 1</Box>

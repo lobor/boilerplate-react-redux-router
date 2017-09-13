@@ -21,7 +21,6 @@ describe('Test component Link', () => {
 	test('render link click', () => {
 		var component = renderer.create(<Link href="/" selected regexp />);
 		const tree = component.toJSON()
-		console.log(tree)
 		tree.props.onClick();
 	  expect(component).toMatchSnapshot()
 	})
@@ -30,7 +29,6 @@ describe('Test component Link', () => {
 		var toto = false;
 		var component = renderer.create(<Link href="/" selected regexp onClick={() => { toto = true }} />);
 		const tree = component.toJSON()
-		console.log(tree)
 		tree.props.onClick();
 	  expect(toto).toBe(true)
 	})
@@ -39,7 +37,6 @@ describe('Test component Link', () => {
 		var toto = false;
 		var component = renderer.create(<Link href="/" selected regexp onClick={() => { toto = true }} />);
 		const tree = component.toJSON()
-		console.log(tree)
 		tree.props.onClick({preventDefault: () => {}, stopPropagation: () => {}, target: { href: false }});
 	  expect(toto).toBe(true)
 	})

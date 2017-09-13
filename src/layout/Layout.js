@@ -47,7 +47,8 @@ export default class PageLayout extends React.Component {
 					<LinkButton onClick={this.toggleMenu}><div className="icon-menu"/></LinkButton>
 					<ContainerLink open={this.state.menu}>
 						<Link href='/' onClick={this.toggleMenu}>Home</Link>
-						<Link href='/toto' onClick={this.toggleMenu} regexp>Toto</Link>
+						<Link href='/user' onClick={this.toggleMenu} regexp>Users</Link>
+						<Link href='/about' onClick={this.toggleMenu} regexp>About</Link>
 					</ContainerLink>
 				</Nav>
 				<Container>

@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test route About render About 1`] = `
+<div
+  className="sc-htpNat bBHonn"
+>
+  <div
+    className="sc-htpNat bBHonn"
+  >
+    <h1
+      className="sc-bdVaJa kwHLXg"
+    >
+      Anteponere illud amicitiae esse veterrima
+    </h1>
+  </div>
+  <div
+    className="sc-htpNat bBHonn"
+  >
+    <div
+      className="sc-bwzfXH UDjhZ"
+    >
+      Cum haec taliaque sollicitas eius aures everberarent expositas semper eius modi rumoribus et patentes, varia animo tum miscente consilia, tandem id ut optimum factu elegit: et Vrsicinum primum ad se venire summo cum honore mandavit ea specie ut pro rerum tunc urgentium captu disponeretur concordi consilio, quibus virium incrementis Parthicarum gentium a arma minantium impetus frangerentur.
+    </div>
+    <div
+      className="sc-bwzfXH UDjhZ"
+    >
+      Cum haec taliaque sollicitas eius aures everberarent expositas semper eius modi rumoribus et patentes, varia animo tum miscente consilia, tandem id ut optimum factu elegit: et Vrsicinum primum ad se venire summo cum honore mandavit ea specie ut pro rerum tunc urgentium captu disponeretur concordi consilio, quibus virium incrementis Parthicarum gentium a arma minantium impetus frangerentur.
+    </div>
+  </div>
+  <div
+    className="sc-htpNat hfAtJp"
+  >
+    <div
+      className="sc-bwzfXH UDjhZ"
+      style={
+        Object {
+          "backgroundColor": "#EEE",
+          "height": "400px",
+        }
+      }
+    />
+  </div>
+  <div
+    className="sc-htpNat bBHonn"
+  >
+    <div
+      className="sc-bwzfXH UDjhZ"
+    >
+      Cum haec taliaque sollicitas eius aures everberarent expositas semper eius modi rumoribus et patentes, varia animo tum miscente consilia, tandem id ut optimum factu elegit: et Vrsicinum primum ad se venire summo cum honore mandavit ea specie ut pro rerum tunc urgentium captu disponeretur concordi consilio, quibus virium incrementis Parthicarum gentium a arma minantium impetus frangerentur.
+    </div>
+  </div>
+</div>
+`;

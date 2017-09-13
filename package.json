@@ -6,14 +6,16 @@
   "scripts": {
     "build": "webpack --config ./build/webpack.config.js",
     "start": "NODE_ENV=development webpack-dev-server --inline --hot --watch --config ./build/webpack.config.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "jest": "jest"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "jest": {
-    "collectCoverage": true
+    "collectCoverage": true,
+		"moduleNameMapper": {
+			"^components(.*)$": "<rootDir>/src/components$1"
+		}
   },
   "dependencies": {
     "babel-preset-stage-0": "^6.24.1",

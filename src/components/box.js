@@ -5,12 +5,12 @@ module.exports = styled.div`
   font-size: 1rem;
 	padding: 5px 10px;
 	flex: 1;
-	margin-left: 4%;
-	${media.Mobile`margin-left: 0;`}
+	margin-right: 4%;
+	${media.Mobile`margin-right: 0;`}
   letter-spacing: .1rem;
   display: flex;
-	&:first-child{
-		margin-left: 0;
+	&:last-child{
+		margin-right: 0;
 	}
 
 	${props => {

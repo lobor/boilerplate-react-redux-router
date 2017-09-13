@@ -15,6 +15,9 @@ module.exports = styled.div`
 	}
 
 	${props => {
+		if (props.flex) {
+			return 'flex: 1;'
+		}
 		if (props.left) {
 			return `
 				justify-content: flex-end;

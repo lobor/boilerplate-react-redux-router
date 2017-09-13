@@ -31,15 +31,19 @@ export default class Link extends React.Component {
 	}
 
 	clickItem = (e) => {
-		e.preventDefault();
-		e.stopPropagation();
+
+		if (e) {
+			e.preventDefault();
+			e.stopPropagation();
+		}
 
 		if (this.props.onClick) {
 			this.props.onClick(e);
 		}
 
-		if (e.target.href)
+		if (e && e.target.href) {
 			router.dispatch(navigate(e.target.href))
+		}
 	}
 
 	render() {

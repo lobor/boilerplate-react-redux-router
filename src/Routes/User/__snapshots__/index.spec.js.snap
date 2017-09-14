@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test route User render User 1`] = `
+<User
+  list={[Function]}
+  users={
+    Array [
+      Object {
+        "firstName": "Lionel",
+        "id": 1,
+        "lastName": "Dupond",
+      },
+    ]
+  }
+/>
+`;

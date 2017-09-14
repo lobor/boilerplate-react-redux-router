@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test route User Info render User 1`] = `
+<div
+  className="sc-htpNat bBHonn"
+>
+  <div
+    className="sc-bxivhb lluzpC"
+  >
+    <label
+      htmlFor="firstName"
+    >
+      First Name
+    </label>
+    <input
+      className="sc-EHOje jbbhzM"
+      id="firstName"
+      name="firstName"
+      type="text"
+      value="Lionel"
+    />
+  </div>
+  <div
+    className="sc-bxivhb lluzpC"
+  >
+    <label
+      htmlFor="lastName"
+    >
+      Last Name
+    </label>
+    <input
+      className="sc-EHOje jbbhzM"
+      id="lastName"
+      name="lastName"
+      type="text"
+      value="Dupond"
+    />
+  </div>
+</div>
+`;

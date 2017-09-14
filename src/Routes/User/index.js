@@ -1,22 +1,14 @@
 import React from 'react'
-import { router, navigate } from './../../store/'
+import { routeStore, navigate } from 'store/router'
 import { Link, Row, Table, Box } from 'components';
 
 export default class User extends React.Component {
-	static keyState = [
-		'user.users'
-	]
-
-	defaultProps = {
-		users: []
-	}
-
 	componentWillMount() {
 		this.props.list();
 	}
 
 	openUser(id) {
-		router.dispatch(navigate('/user/'+id))
+		routeStore.dispatch(navigate('/user/'+id))
 	}
 
 	render () {

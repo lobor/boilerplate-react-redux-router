@@ -15,7 +15,8 @@
     "collectCoverage": true,
 		"moduleNameMapper": {
 			"^components(.*)$": "<rootDir>/src/components$1",
-			"^actions(.*)$": "<rootDir>/src/actions$1"
+			"^actions(.*)$": "<rootDir>/src/actions$1",
+			"^store(.*)$": "<rootDir>/src/store$1"
 		}
   },
   "dependencies": {

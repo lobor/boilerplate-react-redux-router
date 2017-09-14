@@ -2,7 +2,7 @@
 
 exports[`Test component Link render link 1`] = `
 <a
-  className=" selected sc-bdVaJa bDWFJH"
+  className="sc-bdVaJa bDWFJH"
   href={undefined}
   onClick={[Function]}
   selected={false}
@@ -11,7 +11,7 @@ exports[`Test component Link render link 1`] = `
 
 exports[`Test component Link render link click 1`] = `
 <a
-  className=" selected sc-bdVaJa bDWFJH"
+  className="sc-bdVaJa bDWFJH"
   href="/"
   onClick={[Function]}
   selected={true}
@@ -20,7 +20,7 @@ exports[`Test component Link render link click 1`] = `
 
 exports[`Test component Link render link selected 1`] = `
 <a
-  className=" selected sc-bdVaJa bDWFJH"
+  className="sc-bdVaJa bDWFJH"
   href="/"
   onClick={[Function]}
   selected={true}

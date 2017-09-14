@@ -44,6 +44,7 @@ var config = {
 	resolve: {
 		alias: {
 			'components': path.join(__dirname, '..', 'src', 'components'),
+			'store': path.join(__dirname, '..', 'src', 'store'),
 		}
 	},
 	plugins: [

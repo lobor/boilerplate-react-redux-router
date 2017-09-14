@@ -1,5 +1,6 @@
 import React from 'react'
-import { router, navigate } from './../store/'
+// import { router, navigate } from './../store/'
+import { routeStore, navigate } from 'store/router'
 import styled from 'styled-components';
 
 const A = styled.a``;
@@ -17,13 +18,17 @@ export default class Link extends React.Component {
 
 	componentWillMount() {
 		var reg;
+		var state = routeStore.getState();
 		if (this.props.regexp) {
 			reg = new RegExp(this.props.href, 'g');
 		}
-		this.setState({ active: router.getState().href === this.props.href || this.props.selected || reg && router.getState().href.match(reg) })
-		this.unsubscribe = router.subscribe(() => {
-			this.setState({ active: router.getState().href === this.props.href || reg && router.getState().href.match(reg) })
-		})
+
+		if (state && state.path) {
+			this.setState({ active: state.path.path === this.props.href || this.props.selected || reg && state.path.path.match(reg) })
+			this.unsubscribe = routeStore.subscribe(() => {
+				this.setState({ active: state.path.path === this.props.href || reg && state.path.path.match(reg) })
+			})
+		}
 	}
 
 	componentWillUnmount() {
@@ -42,7 +47,7 @@ export default class Link extends React.Component {
 		}
 
 		if (e && e.target.href) {
-			router.dispatch(navigate(e.target.href))
+			routeStore.dispatch(navigate(e.target.href))
 		}
 	}
 

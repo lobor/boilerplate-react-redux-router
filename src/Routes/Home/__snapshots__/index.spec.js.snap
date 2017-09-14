@@ -6,7 +6,9 @@ exports[`Test route Home render Home 1`] = `
 >
   <h1
     className="sc-bdVaJa kwHLXg"
-  />
+  >
+    Hello
+  </h1>
   <div
     className="sc-htpNat bBHonn"
   >

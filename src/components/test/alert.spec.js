@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import renderer from 'react-test-renderer'
 import 'jest-styled-components'
 
-import Alert from './../alert'
+import Alert from 'components/alert'
 
 test('render default alert', () => {
   const tree = renderer.create(<Alert />).toJSON()

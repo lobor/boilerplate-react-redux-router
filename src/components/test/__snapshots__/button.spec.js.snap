@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render button 1`] = `
+exports[`Test render component button render button 1`] = `
 .c0 {
   display: inline-block;
   height: 38px;
@@ -52,7 +52,7 @@ exports[`render button 1`] = `
 />
 `;
 
-exports[`render button primary 1`] = `
+exports[`Test render component button render button primary 1`] = `
 .c0 {
   display: inline-block;
   height: 38px;

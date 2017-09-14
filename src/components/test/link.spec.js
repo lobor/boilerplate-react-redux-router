@@ -22,7 +22,7 @@ describe('Test component Link', () => {
 		var component = renderer.create(<Link href="/" selected regexp />);
 		const tree = component.toJSON()
 		tree.props.onClick();
-	  expect(component).toMatchSnapshot()
+		expect(document.location.pathname).toMatch('/')
 	})
 
 	test('render link click with props onClick', () => {

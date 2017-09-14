@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test component Loading render Loading 1`] = `
+.c0 {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  background: #222;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-animation: leftEyeAnimation 3s infinite cubic-bezier(0.455,0.03,0.515,0.955);
+  animation: leftEyeAnimation 3s infinite cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c1 {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  background: #222;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-animation: rightEyeAnimation 3s infinite cubic-bezier(0.455,0.03,0.515,0.955);
+  animation: rightEyeAnimation 3s infinite cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c2 {
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50%;
+  border: solid 1.3vh #222;
+  border-right: solid 1.3vh rgba(223,223,194,0);
+  border-left: solid 1.3vh rgba(223,223,194,0);
+  border-bottom: solid 1.3vh rgba(223,223,194,0);
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%) rotate(360deg);
+  -ms-transform: translate(-50%,-50%) rotate(360deg);
+  transform: translate(-50%,-50%) rotate(360deg);
+  -webkit-animation: mouthAnimation 3s infinite cubic-bezier(0.455,0.03,0.515,0.955);
+  animation: mouthAnimation 3s infinite cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+<div
+  style={
+    Object {
+      "margin": "auto",
+      "marginTop": "35%",
+    }
+  }
+>
+  <div
+    className="c0"
+  />
+  <div
+    className="c1"
+  />
+  <div
+    className="c2"
+  />
+</div>
+`;

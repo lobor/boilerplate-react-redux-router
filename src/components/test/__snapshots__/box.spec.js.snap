@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render center box 1`] = `
+exports[`Test component Box render center box 1`] = `
 .c0 {
   font-size: 1rem;
   padding: 5px 10px;
@@ -37,7 +37,7 @@ exports[`render center box 1`] = `
 />
 `;
 
-exports[`render left box 1`] = `
+exports[`Test component Box render left box 1`] = `
 .c0 {
   font-size: 1rem;
   padding: 5px 10px;
@@ -74,7 +74,7 @@ exports[`render left box 1`] = `
 />
 `;
 
-exports[`render right box 1`] = `
+exports[`Test component Box render right box 1`] = `
 .c0 {
   font-size: 1rem;
   padding: 5px 10px;
@@ -107,7 +107,7 @@ exports[`render right box 1`] = `
 />
 `;
 
-exports[`render space around box 1`] = `
+exports[`Test component Box render space around box 1`] = `
 .c0 {
   font-size: 1rem;
   padding: 5px 10px;
@@ -144,7 +144,7 @@ exports[`render space around box 1`] = `
 />
 `;
 
-exports[`render space-between box 1`] = `
+exports[`Test component Box render space-between box 1`] = `
 .c0 {
   font-size: 1rem;
   padding: 5px 10px;

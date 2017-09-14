@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test component Nav horizontal nav 1`] = `
+<nav
+  className="sc-bdVaJa inDkyG"
+/>
+`;
+
+exports[`Test component Nav simple nav 1`] = `
+<nav
+  className="sc-bdVaJa dIMaYf"
+/>
+`;
+
+exports[`Test component Nav top nav 1`] = `
+<nav
+  className="sc-bdVaJa eJjEcC"
+/>
+`;

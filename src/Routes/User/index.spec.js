@@ -18,11 +18,9 @@ describe('Test route User', () => {
 	  expect(component).toMatchSnapshot()
 	})
 
-	// test('click on user', () => {
-	// 	console.log(component);
-	// 	var toto  = shallow(component)
-	// 	toto.find('tbody tr').simulate('click');
-	// 	// component.openUser(1);
-	//   // expect(tree).toMatchSnapshot()
-	// })
+	test('click on user', () => {
+		var toto  = shallow(component)
+		toto.find('tbody tr').simulate('click');
+	  expect(document.location.pathname).toMatch('/user/1')
+	})
 })

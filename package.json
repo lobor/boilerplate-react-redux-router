@@ -13,6 +13,7 @@
   "license": "ISC",
   "jest": {
     "collectCoverage": true,
+    "testURL": "http://localhost/",
 		"moduleNameMapper": {
 			"^components(.*)$": "<rootDir>/src/components$1",
 			"^actions(.*)$": "<rootDir>/src/actions$1",
